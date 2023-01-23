@@ -23,7 +23,7 @@ body {
     z-index: 1;
 }
 #client-card-3 {
-    position: absolute;
+    position: absulate;
     bottom: 50px;
 }
 @media screen and (max-width: 576px){

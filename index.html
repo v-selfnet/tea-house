@@ -5,102 +5,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tea House</title>
-
-    <!-- BS CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-
-    <!-- My Tea House Style -->
-    <link rel="stylesheet" href="myTeaHouse.css">
+    <title>Document</title>
+    <!-- Tail Wind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/813be7512c.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="container-fluid border border-1 border-danger">
-    <div class="container border border-1 border-primary">
-        <header>
-            <div>banner</div>
-        </header>
-        <main>
-            <!-- Meet our support clients -->
-            <section>
-                <div class="">
-                    <div class="row row-cols-1 row-cols-md-2 p-5 bg-warning rounded-5 client-gradiant">
-                        <div class="col d-flex flex-column justify-content-center pt-5">
-                            <h1>Meet Our Super <br> Clients</h1>
-                            <p class="pe-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quisquam, maxime sit fugiat
-                                doloremque nesciunt veritatis iste cumque blanditiis praesentium harum, consequuntur,
-                                quo iusto aliquid optio rem vero placeat ipsam.</p>
-                            <div><button class="btn btn-warning">Show All</button></div>
-                            <div><img class="opacity-25 w-25 bg-image position-absolute top-50 start-0" src="cup.png" alt=""></div>
-                        </div>
+<body>
+    <!-- Header - Tea House -->
+    <header class="container mx-auto lg:flex border-2">
+        <!-- Title -->
+        <div class="flex flex-col justify-center px-36">
+            <h1 class="text-5xl font-semibold">It's good<br />tea time at The<br />Tea House</h1>
+            <p>Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+            <div><button class="bg-sky-500 text-white rounded-lg px-5 py-2">Explore More</button></div>
+        </div>
+        <!-- Banner -->
+        <div class="relative">
+            <div><img src="banner.png" alt=""></div>
+            <div class="flex absolute top-28 right-100 bg-red-200 p-3 shadow-lg rounded-full">
+                <div class="flex items-center px-2">
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div>
+                    <p>5.00</p>
+                    <p>Trust Pilot Ratings</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- Our feature Product -->
+        <section class="container mx-auto mt-10 border-2">
+            <!-- Title-Paragraph -->
+            <div class="text-center px-36">
+                <p class="text-5xl font-semibold">Our Featured Products</p>
+                <p>There are many variations of passages of Lorem Ipsum available, but
+                    the majority have suffered alteration in some form, by injected
+                    humour, or randomised words which don't look even slightly
+                    believable.</p>
+            </div>
+            <!-- Iteams using Grid-->
+            <div class="grid grid-cols-1 lg:grid-cols-4 justify-center gap-4 border-2 m-3">
+                <div class="bg-sky-500/20 text-center p-5">1
+                    <img class="mx-auto" src="tea-1.png" alt="">
+                    <p class="text-2xl font-bold">Milk Tea</p>
+                    <p>Creamer could be replaced by fresh milk</p>
+                </div>
+                <div class="bg-sky-500/20 text-center p-5">1
+                    <img class="mx-auto" src="tea-2.png" alt="">
+                    <p class="text-2xl font-bold">Milk Tea</p>
+                    <p>Creamer could be replaced by fresh milk</p>
+                </div>
+                <div class="bg-sky-500/20 text-center p-5">1
+                    <img class="mx-auto" src="tea-3.png" alt="">
+                    <p class="text-2xl font-bold">Milk Tea</p>
+                    <p>Creamer could be replaced by fresh milk</p>
+                </div>
+                <div class="bg-sky-500/20 text-center p-5">1
+                    <img class="mx-auto" src="tea-4.png" alt="">
+                    <p class="text-2xl font-bold">Milk Tea</p>
+                    <p>Creamer could be replaced by fresh milk</p>
+                </div>
+                
 
 
-                        <div class="col d-flex flex-column align-items-center ps-5 row-col-1">
-                            <div id="client-card-1">
-                                <div class="card p-3 mb-3 opacity-25" style="max-width: 28rem; ">
-                                    <!-- Badge -->
-                                    <span class="position-absolute top-0 start-1 translate-middle p-2 bg-gradient border border-light rounded-circle">
-                                        <img src="client.png" alt="">
-                                        <span class="visually-hidden">New alerts</span>
-                                    </span>
-                                    <div class="card-body">
-                                        <!-- <h5 class="card-title">Dark card title</h5> -->
-                                        <p class="card-text p-3">We are providing the best and suitable home insurance services for the people who are interested to treatment.</p>
-                                        <p class="card-text ps-3">Ilham Yuda<br>Businessman</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="client-card-2">
-                                <div class="card p-3 mb-3" style="max-width: 28rem; ">
-                                    <!-- Badge -->
-                                    <span class="position-absolute top-0 start-1 translate-middle p-2 bg-gradient border border-light rounded-circle">
-                                        <img src="client.png" alt="">
-                                        <span class="visually-hidden">New alerts</span>
-                                    </span>
-                                    <div class="card-body">
-                                        <!-- <h5 class="card-title">Dark card title</h5> -->
-                                        <p class="card-text p-3">We are providing the best and suitable home insurance services for the people who are interested to treatment.</p>
-                                        <p class="card-text ps-3">Ilham Yuda<br>Businessman</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="" id="client-card-3">
-                                <div class="card p-3 mb-3 opacity-25" style="max-width: 28rem; ">
-                                    <!-- Badge -->
-                                    <span class="position-absolute top-0 start-1 translate-middle p-2 bg-gradient border border-light rounded-circle">
-                                        <img src="client.png" alt="">
-                                        <span class="visually-hidden">New alerts</span>
-                                    </span>
-                                    <div class="card-body">
-                                        <!-- <h5 class="card-title">Dark card title</h5> -->
-                                        <p class="card-text p-3">We are providing the best and suitable home insurance services for the people who are interested to treatment.</p>
-                                        <p class="card-text ps-3">Ilham Yuda<br>Businessman</p>
-                                    </div>
-                                </div>
-                            </div>
-                        
-                        
-                        
-                        
-                        
-                        
-                        </div>
-                    </div>
-                    
-            </section>
-
-            <!-- News & Events -->
-            <section>
-                News & Events
-            </section>
-        </main>
-    </div>
-
-    <!-- BS JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
-
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
